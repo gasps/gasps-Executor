@@ -7,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 import robotsTxt from "astro-robots-txt";
 // https://astro.build/config
 export default defineConfig({
-  site: "https://executor.gasps.lol/",
+  site: "https://blog.gasp.lol/",
   integrations: [
     mdx(),
     sitemap(),
