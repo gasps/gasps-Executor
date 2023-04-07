@@ -26,7 +26,7 @@ export async function get() {
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
         <ttl>60</ttl>
         <image>
-            <url>https://blog.sirius.menu/placeholder-social.png</url>
+            <url>https://executor.gasps.lol/placeholder-social.png</url>
             <title>${SITE_TITLE}</title>
             <link>${SITE_URL}</link>
         </image>
