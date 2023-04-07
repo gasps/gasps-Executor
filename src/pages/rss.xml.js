@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from "../consts";
 
 export async function get() {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("executor");
 
   const feedItems = posts
     .filter((post) => post.data.isPublic !== false)
@@ -17,7 +17,7 @@ export async function get() {
       <category>${post.data.type}</category>`,
     }));
 
-  const categories = ["Sirius", "Rayfield", "Blog", "News", "Updates", "Announcements", "Newsroom"];
+  const categories = ["Sirius", "Rayfield", "executor", "News", "Updates", "Announcements", "Newsroom"];
 
   const customData = `
         <generator>AstroJS</generator>
