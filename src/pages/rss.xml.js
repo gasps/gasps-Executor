@@ -11,7 +11,7 @@ export async function get() {
       ...post.data,
       // replace html tags from description
       description: post.data.description.replace(/(<([^>]+)>)/gi, ""),
-      link: `/blog/${post.slug}/`,
+      link: `/executor/${post.slug}/`,
       customData: `
       <image>${post.data.heroImage}</image>
       <category>${post.data.type}</category>`,
